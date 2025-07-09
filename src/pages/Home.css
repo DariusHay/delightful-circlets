@@ -1,0 +1,188 @@
+/* src/pages/Home.css */
+/* General */
+.home {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero */
+.hero {
+  background: url('/hero-bg.jpg') center center / cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 105, 180, 0.25); /* soft pink overlay */
+  z-index: 0;
+  border-radius: 20px;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);  /* 👈 adds depth */
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #fdfdfd;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);  /* 👈 soft shadow */
+}
+
+
+.shop-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ff69b4;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.shop-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ff69b4;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Featured Section */
+.featured {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.featured h2 {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: #ff69b4;
+}
+
+.bracelet-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.bracelet-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  width: 180px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.bracelet-card:hover {
+  transform: translateY(-5px);
+}
+
+.bracelet-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Meet the Maker Section */
+.about-creator {
+  background: repeating-linear-gradient(
+    135deg,
+    #fff0f6,
+    #fff0f6 10px,
+    #ffe4ec 10px,
+    #ffe4ec 20px
+  );
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.about-creator h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+.about-creator p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* CTA Section */
+.cta {
+  padding: 60px 20px;
+  text-align: center;
+  background: radial-gradient(circle, #ffe6f0, #fff);
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.cta h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #cc0077;
+}
+
+.cta-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #cc0077;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero-text p {
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 0.95;
+  }
+}
