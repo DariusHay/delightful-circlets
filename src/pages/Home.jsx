@@ -51,7 +51,7 @@ const Home = () => {
       {/* Meet the Maker */}
       <section className="about-creator fade-in">
         <h2>Meet the Maker</h2>
-        <p>Hi! I'm Ava, a 16-year-old who loves making unique bracelets that tell a story. What started as a hobby has grown into a passion — and now, my own little business!</p>
+        <p>Hi! I'm Seraiah, a 15-year-old who loves making unique bracelets that tell a story. What started as a hobby has grown into a passion — and now, my own little business!</p>
       </section>
 
       {/* CTA */}
