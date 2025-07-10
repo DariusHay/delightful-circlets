@@ -1,26 +1,29 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+// App.jsx
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Shop from './pages/Shop'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import styles from './App.module.css'
+import './App.module.css'
 
-const App = () => {
+function App() {
   return (
-    <div className={styles.container}>
+    <div className="app-wrapper">
       <Navbar />
-      <div className={styles.page}>
+      <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </div>
+      </main>
+      <Footer />
     </div>
   )
 }
 
 export default App
+

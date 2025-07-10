@@ -1,8 +1,12 @@
-.container {
-  font-family: sans-serif;
-  padding: 20px;
+/* App.module.css */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.page {
-  margin-top: 20px;
+.main-content {
+  flex: 1;
+  padding-bottom: 40px; /* prevents overlap with footer if needed */
 }
+
