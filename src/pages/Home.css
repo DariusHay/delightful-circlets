@@ -186,3 +186,13 @@
     opacity: 0.95;
   }
 }
+.maker-photo {
+  margin-top: 30px;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 4px solid white;
+}
+
