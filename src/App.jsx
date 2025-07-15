@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Shop from './pages/Shop'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Donate from './pages/Donate'
 import './App.module.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/donate" element={<Donate />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

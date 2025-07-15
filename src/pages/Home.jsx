@@ -62,8 +62,12 @@ const Home = () => {
       {/* CTA */}
       <section className="cta fade-in">
         <h2>Support a Teen Entrepreneur</h2>
-        <Link to="/shop" className="cta-btn">Explore the Shop</Link>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '15px', flexWrap: 'wrap' }}>
+          <Link to="/shop" className="cta-btn">Explore the Shop</Link>
+          <Link to="/donate" className="cta-btn" style={{ backgroundColor: '#00c244' }}>Donate</Link>
+        </div>
       </section>
+
     </div>
   )
 }

@@ -1,0 +1,25 @@
+.cashapp-info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #00c244;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 15px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.cashapp-icon {
+  font-size: 1.6rem;
+}
+.cashapp-tag {
+  font-size: 4rem !important;   /* ✅ Force it to override other styles */
+  font-weight: 800;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
+}
+

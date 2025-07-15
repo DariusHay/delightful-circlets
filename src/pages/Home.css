@@ -161,6 +161,11 @@
   font-weight: bold;
   font-size: 1rem;
 }
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #a60061;
+}
 
 .fade-in {
   opacity: 0;

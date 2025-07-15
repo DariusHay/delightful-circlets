@@ -25,6 +25,7 @@ const Navbar = () => {
 
       <div className={`nav-links ${isOpen ? 'open' : ''}`}>
         <Link to="/">Home</Link>
+        <Link to="/donate">Donate</Link>
         <Link to="/shop">Shop</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>

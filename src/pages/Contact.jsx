@@ -25,6 +25,11 @@ const Contact = () => {
         <p>If you'd like to place an order or have any questions, feel free to reach out!</p>
 
         <div className="contact-info">
+          <img
+            src={`${import.meta.env.BASE_URL}dance2.JPG`}
+            alt="Seraiah - Maker of Delightful Circlets"
+            className="maker-photo"
+          />
           <p><strong>Contact Name:</strong> Seraiah</p>
           <p><strong>Phone:</strong> <a href="tel:4078679471">(407) 867-9471</a></p>
 
@@ -33,7 +38,6 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="facebook-link"
-            color='white'
           >
             <FaFacebook className="facebook-icon" />
             Facebook Page
