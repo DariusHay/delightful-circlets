@@ -1,24 +1,34 @@
 .contact-page {
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
-  /* background: radial-gradient(circle, #ffe6f0 10%, #fff0f6 90%); */
+  background: url('/beads.jpg') center center /cover no-repeat;
+  position: relative;
 }
-
+.contact-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* Dark overlay to make text pop */
+  z-index: 0;
+}
 .contact-content {
-  background: rgba(255, 182, 193, 0.15); /* soft transparent pink */
+  background-color: #ffe4ec;        /* ✅ Solid soft pink background */
   border-radius: 20px;
   padding: 40px 30px;
   max-width: 600px;
   width: 100%;
   text-align: center;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-  backdrop-filter: blur(8px);
   color: white;
   font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
 }
+
+
 
 .contact-content h2 {
   font-family: 'Playfair Display', serif;
@@ -61,19 +71,6 @@
 
 .facebook-icon {
   font-size: 1.2rem;
-}
-.contact-content {
-  background: rgba(255, 182, 193, 0.15);
-  border-radius: 20px;
-  padding: 40px 30px;
-  max-width: 600px;
-  width: 100%;
-  text-align: center;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-  backdrop-filter: blur(8px);
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6); /* 🔥 shadow for visibility */
 }
 
 .contact-content h2,
