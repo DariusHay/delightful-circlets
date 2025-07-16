@@ -31,21 +31,30 @@ const Home = () => {
 
       {/* Featured Products */}
       <motion.section className="featured fade-in">
-        <h2>Featured Bracelets</h2>
+        <h2>Featured Items</h2>
         <div className="bracelet-grid">
           <div className="bracelet-card">
-            <img src={`${import.meta.env.BASE_URL}bracelet1.jpg`} alt="Rainbow Charm Bracelet" />
-            <p>Rainbow Charm</p>
+            <div className="bracelet-image-wrapper right-focus">
+              <img src={`${import.meta.env.BASE_URL}sunglasses.JPG`} alt="Rainbow Charm Bracelet" className="bracelet-image" />
+            </div>
+            <p>Custom Sunglasses</p>
           </div>
+
           <div className="bracelet-card">
-            <img src={`${import.meta.env.BASE_URL}bracelet2.jpg`} alt="Pearl Twist Bracelet" />
-            <p>Pearl Twist</p>
+            <div className="bracelet-image-wrapper zoom-2">
+              <img src={`${import.meta.env.BASE_URL}pearl.JPG`} alt="Pearl Bracelet" className="bracelet-image" />
+            </div>
+            <p>Pearl Bracelets</p>
           </div>
+
           <div className="bracelet-card">
-            <img src={`${import.meta.env.BASE_URL}bracelet3.jpg`} alt="Sunset Glow Bracelet" />
-            <p>Sunset Glow</p>
+            <div className="bracelet-image-wrapper zoom-1">
+              <img src={`${import.meta.env.BASE_URL}custom.JPG`} alt="Sunset Glow Bracelet" className="bracelet-image" />
+            </div>
+            <p>Custom Named Bracelets</p>
           </div>
         </div>
+
       </motion.section>
 
       {/* Meet the Maker */}

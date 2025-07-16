@@ -108,6 +108,35 @@
   border-radius: 8px;
 }
 
+.bracelet-image-wrapper {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.bracelet-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+
+.zoom-1 .bracelet-image,
+.zoom-2 .bracelet-image {
+  transform: scale(1.3);
+  object-position: 50% 50%;
+}
+
+.right-focus .bracelet-image {
+  object-position: 90% 50%;
+}
+
+
+
 /* Meet the Maker Section */
 .about-creator {
   background: repeating-linear-gradient(

@@ -87,3 +87,11 @@
   color: white !important;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.6) !important; 
 }
+
+@media (max-width: 600px) {
+  .contact-page {
+    background-position: center bottom !important;
+    background-size: cover;
+    min-height: 120vh; /* gives room for image to shift visually */
+  }
+}
